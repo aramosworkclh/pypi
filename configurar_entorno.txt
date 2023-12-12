@@ -1,0 +1,42 @@
+Listar paquetes:
+python -m pip list
+
+Mostrar la version de pip 
+python -m pip --version
+
+Instalar paquete requests desde pypi.org
+python -m pip install requests
+
+Actualizar paquete requests
+python -m pip install -U requests
+
+Desinstalar paquete requests
+python -m pip unistall requests
+
+Versionado de paquetes
+Exactamente la version 2.20.1 <major>.<minor>.<patch>
+== version concreta
+>=, >, <=, < versión mayor o igual, mayor, menor o igual, menor que
+~= ultima version relativa (1.0 -> 1.*)
+python -m pip install requests==2.20.1 
+
+Crear entorno virtual del proyecto
+python -m venv venv
+
+Activarlo
+.\venv\Scripts\activate
+
+Desactivarlo
+deactivate
+
+Guardar y bloquear el entorno
+python -m pip freeze > requirements.txt
+
+Reproducir entorno
+python -m pip install -r requirements.txt
+
+Ver el entorno y path de librerias
+python
+>>>import sys
+>>>sys.path
+
